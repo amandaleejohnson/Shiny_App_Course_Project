@@ -12,7 +12,7 @@ subtitle: "Course Project: Shiny Application and Reproducible Pitch"
 
 The associated shiny app uses the "mtcars" dataset available in R to predict a vehicle's horsepower given the number of miles per gallon (MPG), approximate displacement of the car (in cu. in.), and the approximate weight of the car (in 1,000 lbs), stratified by the number of cylinders (4, 6, or 8). 
 
-```{r, echo = FALSE}
+```{r, echo = TRUE}
     data(mtcars)    
     covars = c("hp", "mpg", "disp", "wt")
 

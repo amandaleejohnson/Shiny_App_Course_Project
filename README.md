@@ -1,36 +1,9 @@
-# Shiny_App_Course_Project
+The associated shiny app uses the "mtcars" dataset available in R to predict a vehicle's horsepower given the number of miles per gallon (MPG), approximate displacement of the car (in cu. in.), and the approximate weight of the car (in 1,000 lbs), stratified by the number of cylinders (4, 6, or 8). 
 
-This peer assessed assignment has two parts. First, I created a Shiny application and deployed it on Rstudio's servers. Second, I prepared a reproducible pitch presentation about my application.
+The user can modify each of the following factors by adjusting the associated slider:
 
-## The application must include the following:
-
-  - Some form of input (widget: textbox, radio button, checkbox, ...)
-  - Some operation on the ui input in sever.R
-  - Some reactive output displayed as a result of server calculations
-  - Enough documentation so that a novice user could use the application.
-  - The documentation should be at the Shiny website itself. Do not post to an external link.
-
-## The reproducible pitch must include:
-
-  - 5 slides to pitch the idea done in Slidify or Rstudio Presenter
-  - A link to the github or Rpubs presentation
-  - Embedded R code that gets run when slidifying the document
-
-# Review criteria
-
-    Was there enough documentation on the shiny site for a user to get started using the application?
-    Did the application run as described in the documentation?
-    Was there some form of widget input (slider, textbox, radio buttons, checkbox, ...) in either ui.R or a custom web page?
-    Did server.R perform some calculations on the input in server.R?
-    Was the server calculation displayed in the html page?
-    Was the app substantively different than the very simple applications built in the class? Note, it's OK if the app is simple and based on the one presented in class. I just don't want it to be basically a carbon copy of the examples we covered. For example, if someone simply changed the variable names, then this would not count. However, a prediction algorithm that had a similar layout would be fine.
+    - Miles per gallon (min: 10, max: 35)
+    - Displacement (min: 70, max: 500, in cu. in.)
+    - Weight (min: 1, max: 6, in 1,000 lbs)
     
-
-    Was the presentation completed in slidify or R Presenter?
-    Was it 5 pages?
-    Did it contain an R expression that got evaluated and displayed?
-    Did it contain an R expression that got evaluated and displayed?
-    Was it hosted on github or Rpubs?
-    Was the server calculation displayed in the html page?
-    There were no R errors displayed in the presentation.
-
+The user can select to view each model specific to the number of cylinders on the vehicle (4, 6, or 8) be checking/unchecking each box below the sliders (e.g. "Show/Hid Model for 4-Cylinder Vehicles").    

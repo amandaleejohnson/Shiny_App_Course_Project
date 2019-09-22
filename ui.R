@@ -8,12 +8,16 @@
 #
 
 library(shiny)
+library(shinythemes)
+library(datasets)
+
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
-  
-  # Application title
-  titlePanel("Predicted Horsepower By Miles Per Gallon, Accounting for Vehicle Characteristics"),
+    # define the theme used for the app
+    theme = shinythemes::shinytheme("slate"),
+    # The title
+    titlePanel("Predicted Horsepower By Miles Per Gallon, Accounting for Vehicle Characteristics"),
   
   sidebarLayout(
     sidebarPanel(

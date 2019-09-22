@@ -1,0 +1,48 @@
+---
+title: 'Peer-graded Assignment:'
+author: "A Johnson"
+date: "September 22, 2019"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+subtitle: "Course Project: Shiny Application and Reproducible Pitch"
+---
+
+## Background
+
+The associated shiny app uses the "mtcars" dataset available in R to predict a vehicle's horsepower given the number of miles per gallon (MPG), approximate displacement of the car (in cu. in.), and the approximate weight of the car (in 1,000 lbs), stratified by the number of cylinders (4, 6, or 8). 
+
+```{r, echo = FALSE}
+    data(mtcars)    
+    covars = c("hp", "mpg", "disp", "wt")
+
+    for (i in covars) {
+        print(i)
+        print(summary(mtcars[[i]]))
+        #writeLines("\n") #writes empty line to separate outputs
+    }
+```
+
+
+## Varying Factors
+
+The user can modify each of the following factors by adjusting the associated slider:
+
+    - Miles per gallon (min: 10, max: 35)
+    - Displacement (min: 70, max: 500, in cu. in.)
+    - Weight (min: 1, max: 6, in 1,000 lbs)
+    
+The user can select to view each model specific to the number of cylinders on the vehicle (4, 6, or 8) be checking/unchecking each box below the sliders (e.g. "Show/Hid Model for 4-Cylinder Vehicles").    
+
+## Plot and Predicted Outcome
+
+The plot displays a color-coded dot for each type of vehicle that corresponds to the user-specified MPG and associated horsepower, given the user-specified displacement and weight of the car.  If any of the "show/hide" checkboxes are selected, the plot also displays the best fitting line from the linear regression model for the associated type of vehicle.
+
+The predicted horsepower for each type of vehicle are also displayed as text below the plot.
+
+##Viewing the App in Action:
+
+The application can be viewed here: https://ajohns34.shinyapps.io/assignment_15/
+
+
+

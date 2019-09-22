@@ -32,6 +32,5 @@ This peer assessed assignment has two parts. First, I created a Shiny applicatio
     Did it contain an R expression that got evaluated and displayed?
     Was it hosted on github or Rpubs?
     Was the server calculation displayed in the html page?
-    Here's your opportunity to give this presentation a +1 for being well done. Did they tinker around with the default style? Was the presentation particularly lucid and well organized? In other words, the student made a legitimate try.
     There were no R errors displayed in the presentation.
 
